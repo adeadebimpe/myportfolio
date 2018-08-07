@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Playfair+Display:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+	background-color: #000;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	font-weight: 300;
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/** navigation **/
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	font-family: 'Karla', sans-serif;
+	text-transform: uppercase;
+	flex-wrap:  wrap;
+}
+nav a.navbar-brand{
+	color: #fff;
+	text-decoration: none;
+	
+ }
+
+
+nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	
+	
+}
+@media only screen and (max-width: 521px){
+	nav{
+		justify-content: center;
+		padding: 0rem;
+		padding-top: 1rem;
+	}
+	nav ul{
+	flex-basis: 100%;
+	margin-top: 30px;
+	}
+}
+nav ul li {
+
+	padding-left: 1.5rem;
+}
+
+nav ul li a.nav-link{
+	color: #fff;
+	text-decoration: none;
+	
+}
+nav ul li a:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 4px;
+	background: red;
+	transition: width .3s;
+	position: relative;
+	top: 20px; }
+  nav ul li a:hover:after {
+	width: 100%; }
+  nav ul li a.active {
+	color: #fff; }
+	nav ul li a.active:after {
+	  content: '';
+	  display: block;
+	  width: 100%;
+	  height: 4px;
+	  background: red;
+	  transition: width .3s; }
+
+
+.container{
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+/** intro text **/
+section.intro{
+	padding-top: 9rem;
+	padding-bottom: 9rem;
+	
+}
+div.intro__content{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+h1.intro__text{
+	font-family: 'Playfair Display', serif;
+	font-size: 36px;
+	color: #fff;
+	max-width: 700px;
+	line-height: 1.5;
+	
+	
+}
+@media screen and (min-width: 521px){
+	h1.intro__text{
+		font-size: 48px;
+	}
+}
+span.grey-text{
+	color: rgba(255,255,255, 0.4);
+}
+div.hr-length{
+	border-bottom: 5px solid red;
+	max-width: 70px;
+	margin-top: 3rem;
+}
+/** work **/
+section.work{
+	background-color: #000;
+		
+	
+}
+section.work img{
+	width: 100%;
+	height: auto;
+}
+
+
+section#dottsmediahouse{
+	background-color: #000;	
+}
+section#joluud-mobile{
+	background-color: #000;
+	color: #fff;
+}
+
+.work-description{
+	background-color: #fff;
+	padding: 50px 30px;
+	color: #222;
+	position: relative;
+	top: -20px;
+	box-shadow: 0px 10px 30px rgba(0,0,0, 0.3);
+}
+
+.col-text{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .col-image {
+	background-size: cover !important;
+	background-position:top center !important;
+	min-height: 470px;
+  }
+  .joluudbanner{
+	  background: url('images/joluud-banner.jpg');
+  }
+  
+.dottsbanner{
+	background: url('images/dotts-bannerorange.jpg')
+}  
+section#joluud-mobile .work-description{
+	background-color: #0176ff;
+	
+}
+section#joluud-mobile .work-description h6, section#joluud-mobile .work-description h4{
+	color: #fff;	
+}
+.work-description h6{
+	font-size: 14px;
+	font-family: 'karla', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #4A4A4A;
+	margin-bottom: 20px;
+}
+.work-description h4{
+	font-size: 24px;
+	font-family: 'Playfair Display', serif;
+	color: #0176ff;
+	margin-bottom: 20px;
+}
+.work-description p{
+	line-height: 2;
+	
+}
+.btn {
+	position: relative;
+	z-index: 1;
+	margin-top: 30px;
+	padding: 15px 30px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	cursor: pointer;
+	background: none;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  }
+  .btn-black{
+	  color: #222;
+	  border: 1px solid #222;
+  }
+  .btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  }
+  .btn-1c:after {
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #ffffff;
+  }
+  .btn-1c:hover, .btn-1c:active {
+	color: #000000;
+  }
+  .btn-1c:hover:after, .btn-1c:active:after {
+	width: 100%;
+  }  
+  .btn-black:after{
+	  background-color: #000000;
+  }
+  .btn-black:hover, .btn-black:active{
+	  color: #fff;
+  }
+/** grid **/
+.row{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+
+}
+.col-1-of-2{
+	flex-basis: 100%;
+}
+.col-1-of-3{
+	flex-basis: 100%;
+}
+.col-2-of-3{
+	flex: 100%;
+}
+.col{
+	flex-basis: 100%;
+}
+@media only screen and (min-width: 421px){
+	.col{
+		flex-basis: 50%;
+	}
+}
+.col-1{
+	flex-basis: 100%
+}
+@media screen and (min-width: 768px){
+	.col-1-of-3{
+		flex-basis: 40%;
+	}
+	.col-2-of-3{
+		flex: 1;
+	}
+	.col-1-of-2{
+		flex-basis: 50%;
+	}
+	.col{
+		flex-basis: 25%;
+	}
+	.col-1{
+		flex-basis: 48%;
+	}
+}
+/** contact **/
+section.contact{
+	padding: 100px 0;
+}
+.contact h2, .contact p{
+	color: #fff;
+}
+.contact h2{
+	font-family: 'Playfair Display', serif;
+	font-size: 24px;
+	margin-bottom: 30px;
+	line-height: 1.5;
+}
+.contact p{
+	margin-bottom: 20px;
+}
+@media only screen and (min-width: 521px){
+	.contact h2{
+		font-size: 36px
+	}
+}
+/** footer **/
+footer ul.nav{
+	display: flex;
+	flex-wrap: wrap
+	
+}
+footer ul.nav li {
+	padding-right: 30px;
+	padding-bottom: 30px;
+
+}
+footer ul.nav li a{
+	text-decoration: none;
+	color: rgba(255,255,255,0.6);
+	text-transform: uppercase;
+
+} 
+
+
+/********  ABOUT PAGE ********/ 
+section.profile{
+	padding: 100px 0;
+}
+section.profile h2{
+	font-size: 28px;
+	color: #fff;
+	line-height: 1.5;
+}
+
+/** experience **/
+.experience h6, h6.skills__header{
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.experience .hr-length, .skills .hr-length{
+	margin-top: 20px;
+	width: 40px;
+}
+.job{
+	display: flex;
+	padding: 30px 0px;
+	
+}
+.job__year{
+	color: rgba(255,255,255, 0.4);
+	padding-right: 20px;
+	flex-basis: 20%;
+}
+
+.job__role h4{
+	font-size: 18px;
+	color: #fff;
+}
+.job__role p{
+	text-transform: uppercase;
+	color: rgba(255,255,255, 0.4);
+	padding-top: 15px;
+
+}
+/** skills **/
+
+.languages, .tools{
+	margin-top: 30px;
+}
+.languages p, .tools p{
+	line-height: 2;
+}
+
+.companies{
+	padding: 100px 0;
+}
+.companies h2{
+ font-size: 28px;
+}
+.clients__logos{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding-top: 50px;
+
+}
+
+.clients__logos img{
+	width: 100%;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.clients__logos img:hover{
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+.user-personas {
+	display: flex;
+	align-items: center;
+	justify-content: space-between
+
+}
+.user-personas img{
+
+	width: 32%;
+}
+
+.finished__item{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+section.problem{
+	padding: 100px 0;
+
+}
+section.problem h6{
+	text-transform: uppercase;
+	line-height: 1.5
+
+}
+section.problem img{
+	margin-top: 50px;
+}
+section.problem h2{
+	font-family: 'Playfair Display', serif;
+	font-size: 36px;
+	color: #fff;
+	max-width: 700px;
+	line-height: 1.5;
+
+}
+section.project p, section.redesign p, section.finished p, .lesson__item p, .profile p{
+	font-size: 18px;
+	line-height: 2;
+	margin-bottom: 30px;
+}
+section.project h6, section.redesign h6, section.finished h6, section.lessons h4{
+	text-transform: uppercase;
+	padding: 30px 0;
+	font-size: 18px;
+	font-weight: 500;
+}
+section.project ul{
+	list-style-type: circle;
+	margin-left: 30px;
+}
+section.project ul li{
+	font-size: 20px;
+	line-height: 2;
+	margin-bottom: 30px;
+
+}
+.lesson__item h6{
+	text-transform: uppercase;
+	padding: 30px 0;
+	font-size: 16px;
+	font-weight: 500;
+}
+.profile p{
+	font-size: 20px;
+	line-height: 2;
+	margin-bottom: 30px;
+}
